@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">fuwuqi</string>
+    <string name="id_phone">id_phone</string>
+    <string name="Edit_text1">Edit_text1</string>
+    <string name="Edit_text2">Edit_text2</string>
+    <string name="button">登陆</string>
+
+</resources>

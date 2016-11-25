@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+      name值一般和自定义的控件类名相同，页可以不同
+      我们自定义TextView :newTextColor  newTextSize  newText
+
+      字符串：string
+      像素：deminsion
+      颜色：color
+      引用：reference
+   -->
+<resources>
+    <declare-styleable name="KateTextView">
+        <attr name="newText" format="string" />
+        <attr name="newTextSize" format="dimension" />
+        <attr name="newTextColor" format="color" />
+    </declare-styleable>
+</resources>

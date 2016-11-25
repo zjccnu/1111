@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.administrator.aaaa.MainActivity">
+    <!--顶部代码-->
+    <!--注意layout_gravity和gravity的区别-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="微信"
+    android:textSize="20sp"/>
+    <!--中间部分viewpage-->
+    <!--技巧：weight将空白区域进行分，所以将weight=0 height=0后，就不会覆盖底部了-->
+    <!--viewpage的使用-->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewpage">
+
+    </android.support.v4.view.ViewPager>
+
+<!--底部代码-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal">
+   <LinearLayout
+       android:id="@+id/s1"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_weight="1">
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/s1"
+           android:id="@+id/button1"
+           android:background="#00000000"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="#ffffff"
+           android:text="微信"
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/s2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/s2"
+            android:id="@+id/button2"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="儿子"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/s3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/s3"
+            android:id="@+id/button3"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="复制"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/s4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/s4"
+            android:id="@+id/button4"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="粘贴"
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mydatabase</string>
+    <string name="at_name">点击我创建数据库</string>
+</resources>
